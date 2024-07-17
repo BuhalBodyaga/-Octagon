@@ -1,0 +1,17 @@
+{
+  "name": "1work",
+  "version": "1.0.0",
+
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.1.4"
+  },
+  "description": "",
+  "main": "messages/index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Bukhalikhin Bogdan",
+  "license": "ISC"
+}
