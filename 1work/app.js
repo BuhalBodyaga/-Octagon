@@ -1,9 +1,11 @@
+// Другие импорты
 const express = require('express');
 const mysql = require('mysql2');
 require('dotenv').config();
+const TelegramBot = require('node-telegram-bot-api');
+const bot = require('./bot');
 
 const app = express();
-
 
 const connection = mysql.createConnection({
     host: process.env.DB_HOST,
@@ -92,3 +94,5 @@ app.post('/updateItem', (req, res) => {
 app.listen(3000, function () {
     console.log("Сервер запущен на http://localhost:3000");
 });
+
+
